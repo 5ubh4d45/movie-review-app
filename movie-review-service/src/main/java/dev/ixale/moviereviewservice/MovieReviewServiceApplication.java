@@ -15,7 +15,7 @@ public class MovieReviewServiceApplication {
 
     @GetMapping("/api/v1/")
     public String apiRoot() {
-        return "<div><h2>Welcome</h2></div>";
+        return "<div><h2>Welcome</h2><div><form action=\"http://localhost:8080/api/v1/movies\"><input type=\"submit\" value=\"Get Movies\" /></form></div></div>";
     }
 
 }
