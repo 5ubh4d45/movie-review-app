@@ -13,9 +13,9 @@ export const getMoviesData = async () => {
         // const response = await api.get("/movies");
         const response = await axiosConfig.get("/movies");
 
-        console.log(response.data);
+        // console.log(response.data);
         const data : MovieData[] = response.data;
-        console.log(JSON.stringify(data, null, 4));
+        // console.log(JSON.stringify(data, null, 4));
         return data;
 
     } catch (e) {
