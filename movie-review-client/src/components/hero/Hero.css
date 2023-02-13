@@ -15,6 +15,9 @@
 .movie-poster > img{
     height: 100%;
     width: 100%;
+    display: flex;
+    object-fit: cover;
+
 }
 .movie-card-container{
     height: 550px;
@@ -32,10 +35,33 @@
     top: 200px;
     display: flex;
     justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
 }
 .movie-title{
     color: white;
     display: flex;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.movie-buttons-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100px;
+    padding-right: 20px;
+}
+.play-button-icon-container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: flex-end;
+}
+.play-button-icon{
+    font-size: 4rem;
+    color: white;
 }

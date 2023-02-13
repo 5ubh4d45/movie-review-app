@@ -1,12 +1,16 @@
 import React from 'react'
 import { MovieData } from '../../dataTypes/dataTypes';
 import Hero from "../hero/Hero";
+import Header from "../header/Header";
 
 
 
 function Home(props: {moviesData: MovieData[]}) {
   return (
-    <Hero movies={props.moviesData} />
+      <div>
+        <Hero movies={props.moviesData} />
+      </div>
+
   );
 }
 
