@@ -25,7 +25,8 @@ function Hero(props: { movies: MovieData[]}) {
                       <img src={movie.poster} alt=''/>
                     </div>
                     <div className='movie-title'>
-                      <h3>{movie.title}</h3>
+                      {/*<h2>{movie.title}</h2>*/}
+                        {movie.title}
                     </div>
                     <div className={"movie-buttons-container"}>
                         <Link to={`/trailer/${movie.trailerLink.substring(movie.trailerLink.length - 11)}`}>

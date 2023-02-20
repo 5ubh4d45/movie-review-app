@@ -20,7 +20,7 @@
 
 }
 .movie-card-container{
-    height: 550px;
+    height: 80vh;
     background-color: black;
 }
 .movie-card{
@@ -29,6 +29,7 @@
     height: 100%;
     background-size: cover;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), var(--backdropImg);
+    background-position: center;
 }
 .movie-detail{
     position: absolute;
@@ -47,10 +48,13 @@
     width: auto;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 2em;
+    min-font-size: 1em;
+    max-font-size: 4em;
 }
 .movie-buttons-container{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     width: 100px;
     padding-right: 20px;
@@ -64,4 +68,17 @@
 .play-button-icon{
     font-size: 4rem;
     color: white;
+}
+.play-button-icon:hover{
+    font-size: 5rem;
+    color:white;
+}
+
+@media only screen and (max-width: 800px) {
+    .movie-detail{
+        flex-direction: column;
+        align-items: center;
+        top: 200px;
+        
+    }
 }
