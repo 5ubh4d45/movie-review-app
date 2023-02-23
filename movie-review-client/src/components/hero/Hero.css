@@ -1,5 +1,5 @@
 :root {
-    --backdropImg: url('Screenshot_20221121_062641.png');
+    --backdropImg: url('../pageNotFound/bochhi.png');
     /*--backdropImg: url(--backdropImgUrl);*/
 }
 .movie-carousel-container{
