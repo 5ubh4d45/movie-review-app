@@ -3,12 +3,16 @@ import React from 'react'
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from "@mui/material";
 import { MovieData } from '../../dataTypes/dataTypes';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCirclePlay} from "@fortawesome/free-solid-svg-icons";
+import {Button} from "react-bootstrap";
+import reviews from "../../reviews/Reviews";
 
 
 function Hero(props: { movies: MovieData[]}) {
+
+    const navigate = useNavigate();
 
   return (
     <div className='movie-carousel-container'>
@@ -35,6 +39,10 @@ function Hero(props: { movies: MovieData[]}) {
                             </div>
                         </Link>
                     </div>
+                      <div className={"movie-buttons-container"}>
+
+                          <Button variant={"info"} onClick={()=> navigate(`/reviews/${movie.imdbId}`)}>Reviews</Button>
+                      </div>
                   </div>
                 </div>
               </div>

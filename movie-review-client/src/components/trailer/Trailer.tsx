@@ -12,7 +12,7 @@ const Trailer = () => {
     const {ytTrailerId} = useParams<YtParams>();
 
     let ytWatchLinkBase = "https://www.youtube.com/watch?v=";
-    console.log(ytWatchLinkBase+ytTrailerId);
+    // console.log(ytWatchLinkBase+ytTrailerId);
     return (
         <div className={"react-player-container"}>
             {(ytTrailerId!=null)?<ReactPlayer controls={true} playing={true} url={`${ytWatchLinkBase}${ytTrailerId}`}
